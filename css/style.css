@@ -1,0 +1,112 @@
+html {
+  background: fuchsia;
+}
+.circle {
+  background: #9e978e;
+  /*display: inline-block;*/
+  height: 100px;
+  width: 200px;
+}
+
+.circle.high {
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+
+.circle.low {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px
+}
+
+.about, .how-it-works, .order {
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+/* hero */
+.hero {
+  background: fuchsia;
+  overflow-y: hidden;
+  max-height: 500px;
+  padding-top: 10%;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 0, 0.5, 1);
+}
+#hero-sun {
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+  height: 200px;
+  width: 400px;
+  background: yellow;
+  margin: 0 auto;
+}
+
+.section.hero.closed {
+	max-height: 0;
+  padding-top: 0;
+}
+
+/*about*/
+.about {
+  background: aquamarine;
+}
+
+.row.high {
+  text-align: left;
+  padding-bottom: 5%
+}
+
+.row.low {
+  text-align: right;
+}
+
+.row.low .six:first-of-type{
+  float: right;
+}
+.clouds {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.rainbow {
+  margin: 0 auto;
+  max-width: 60%;
+}
+/* how it works */
+.how-it-works {
+  background: white;
+}
+
+/* order */
+.order {
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+}

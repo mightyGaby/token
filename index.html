@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/chart.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="section hero">
+    <div class="container">
+      <h4>Token</h4>
+      <p>A daily hit, curated to make your highs higher and even out the lows.</p>
+      <div class="row">
+        <div class="circle" id="hero-sun"></div>
+      </div>
+      <div class="row">
+      </div>
+    </div>
+  </div>
+  <div class="section about">
+    <div class="container">
+      <div class="row high">
+        <div class="six columns">
+          <h5>Higher Highs</h5>
+          <p>Throughout a typical cycle, there are days where we feel energized, creative, and exuberant. It's on these days that we feel invincible, outgoing, and open to new experiences.</p>
+          <strong>We're not in the buzzkill business.</strong>
+          <p>On these days, we have selected special strains that gently enhance this bright sunny mood to keep those creative juices flowing. Token works with your cycle to keep you on cloud 9, instead of mellowing out this energized time of the month.</p>
+        </div>
+        <div class="six columns">
+          <img src="img/rainbow.gif" alt="sun shining" title="sun" class="sun" />
+        </div>
+      </div>
+      <div class="row low">
+        <div class="six columns">
+          <h5>Mellow Lows</h5>
+          <p>We know the drill - cramps, mood swings, anxiety. The lows of each month can leave us exhausted at best and downright ruined at worst. We can't wave a magic wand and make it all disappear, but...</p>
+          <strong>Token can help take the edge off.</strong>
+          <p>On hormonal, emotional days, Token helps level out the emotional rollercoaster. Physical symptoms are dulled, and we sprinkle in a little enery boost for good measure.</p>
+        </div>
+        <div class="six columns">
+          <img src="img/clouds.gif" alt="clouds fading" title="clouds" class="clouds" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section how-it-works">
+    <div class="container">
+      <h4>How it works</h4>
+      <div class="row">
+        <div class="one-half column">
+          <p>Each kit contains a microdose for each day of your cycle, carefully curated to complement the ups and downs from hormone fluctuations. Each toke contains just enough to take the edge off or enhance your energy based on the phases of your cycle.</p>
+          <h5>Relieve Symptoms</h5>
+          <ul>
+            <li>Stomach Pain</li>
+            <li>Low Energy</li>
+            <li>Anxiety</li>
+          </ul>
+          <h5>Enhance Exuberance</h5>
+          <ul>
+            <li>Creativity</li>
+            <li>Energy</li>
+            <li>Calm</li>
+          </ul>
+        </div>
+        <div class="one-half column">
+          <canvas id="donut-chart"></canvas>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="section order">
+    <div class="container">
+      <h4>Get Token</h4>
+      <form action="" method="get">
+          <!--cycle length-->
+        <label for="cycle-length">The length of my cycle is about </label>
+        <input id="cycle-length" type="text" name="cycleLength"> <span> days </span>
+        </br>
+        <!--date of last period-->
+        <label for="period-date">My last pariod started on </label>
+        <input id="period-date" type="date" name="periodDate">
+        </br>
+        <input type="button" value="My Token" onclick="return generateTokenChart();">
+      </form>
+    </div>
+  </div>
+  <script src="scripts/scripts.js"></script>
+  <script src="scripts/donut-chart.js"></script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
