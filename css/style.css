@@ -136,6 +136,7 @@ a.contact {
   margin-top: 50px;
   background-image: -webkit-linear-gradient(left, #b2dcc6, #b2dcc6 50%, #e1e1e1 50%);
   background-image: linear-gradient(to right, #b2dcc6, #b2dcc6 50%, #e1e1e1 50%);
+  text-align: center;
 }
 
 .row.high {
@@ -151,21 +152,26 @@ a.contact {
   float: right;
 }
 .clouds {
-  max-width: 100%;
-  margin: 0 auto;
-  position: relative;
+  overflow: hidden;
+  max-height: 160px;
+  margin-bottom: 20px;
 }
 
 .rainbow {
   margin: 0 auto;
   max-width: 60%;
+  transform: rotate(294deg);
+  -ms-transform: rotate(294deg);
+  -moz-transform: rotate(294deg);
+  -webkit-transform: rotate(294deg);
+  -o-transform: rotate(294deg);
 }
 
 @media only screen and (max-width: 40em) {
 
   #about {
-    background-image: -webkit-linear-gradient(bottom, #b2dcc6, #b2dcc6 49%, #333333 49%);
-    background-image: linear-gradient(to bottom, #b2dcc6, #b2dcc6 49%, #333333 49%);
+    background-image: -webkit-linear-gradient(bottom, #b2dcc6, #b2dcc6 49%, #e1e1e1 49%);
+    background-image: linear-gradient(to bottom, #b2dcc6, #b2dcc6 49%, #e1e1e1 49%);
   }
 
 }
